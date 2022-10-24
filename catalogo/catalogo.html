@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nuestro catalogo</title>
+    <!-- icono -->
+    <link rel="shortcut icon" href="../img/logo.png" type="image/x-icon">
+    <!-- meta -->
+    <meta name="description"
+        content="Catalogo de Shaman manga store - Tienda de mangas - Las mejores novedades de mangas importados">
+    <meta name="keywords"
+        content="manga, importado, japon, anime, tienda, ivre, panini, norma, japon, catalogo, ofertas, descuentos">
+    <!-- links -->
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="../estilo/style.css">
+</head>
+
+<body>
+    <!-- nav -->
+    <nav class="navbar sticky-top navbar-dark navbar-expand-lg">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="../index.html">
+                <img class="storelogo" src="../img/logo.png" alt="Logo" width="37" height="24"
+                    class="d-inline-block align-text-top">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll"
+                aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarScroll">
+                <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+                    <li class="nav-item">
+                        <a class="nav-link" href="../index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="../catalogo/catalogo.html">Catalogo</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../ubicacion/ubicacion.html">Ubicacion</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../contacto/contacto.html">Contacto</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../faq/faq.html">Preguntas frecuentes</a>
+                    </li>
+                </ul>
+                <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasScrolling" aria-controls="offcanvasScrolling">Carrito</button>
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Buscar producto" aria-label="Search">
+                    <button class="btn btn-outline-secondary" type="submit" style="color: white;">Buscar</button>
+                </form>
+            </div>
+        </div>
+
+    </nav>
+    <div class="offcanvas offcanvas-right" data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1" id="offcanvasScrolling" aria-labelledby="offcanvasScrollingLabel">
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title" id="offcanvasScrollingLabel">Carrito de compras</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+            <div id="carrito" ></div>
+            <p> Monto total: <span id="total"></span></p>
+            <button id="boton-comprar" class="btn btn-primary"> Comprar!</button>
+            <button id="boton-vaciar" class="btn btn-danger"> Eliminar</button>
+        </div>
+      </div>
+
+    <div class="fixed-bottom wsp">
+        <a href="https://whatsapp.com"><img src="../img/wsp.png" alt="Whatsapp"></a>
+    </div>
+
+
+
+    <main>
+
+        <header>
+            <div class="introcata row contentcenter">
+                <h1 class="display-5">Generos!</h1>
+                <div class="intro-text">
+                    <h3 data-aos="fade-right" class="display-6">Estas deseoso de expandir tu coleccion?</h3>
+                    <p data-aos="fade-right" class="lead"> Estas buscando una nuevas historias pero ya te quedaste sin
+                        ideas?
+                        <br>
+                        Siempre puedes ver tus generos favoritos y descubrir nuevas joyitas!
+                    </p>
+
+
+
+                    <!-- generos -->
+                    <div style="margin:0 30px 0 30px ;">
+                        <div class="container-fluid genecatalog" data-aos="fade-right">
+                            <div class="row text-center container-fluid contentcenter">
+                                <div class="card genero col-lg-2 col-md-4 col-sm-4 col-6">
+                                    <a href=""><img src="../img/generos/shonen.png" class="card-img-top"
+                                            alt="Genero Shonen"></a>
+                                    <div class="card-img-overlay overtexto">
+                                        <h3 class="card-title">Shonen</h3>
+                                    </div>
+                                </div>
+                                <div class="card genero col-lg-2 col-md-4 col-sm-4 col-6">
+                                    <a href=""><img src="../img/generos/shojo.jpg" class="card-img-top"
+                                            alt="Genero shojo"></a>
+                                    <div class="card-img-overlay overtexto">
+                                        <h3 class="card-title">Shojo</h3>
+                                    </div>
+                                </div>
+                                <div class="card genero col-lg-2 col-md-4 col-sm-4 col-6">
+                                    <a href=""><img src="../img/generos/seinen.jpg" class="card-img-top"
+                                            alt="Genero seinen"></a>
+                                    <div class="card-img-overlay overtexto">
+                                        <h3 class="card-title">Seinen</h3>
+                                    </div>
+                                </div>
+                                <div class="card genero col-lg-2 col-md-4 col-sm-4 col-6">
+                                    <a href=""><img src="../img/generos/humor.jpeg" class="card-img-top"
+                                            alt="genero humor"></a>
+                                    <div class="card-img-overlay overtexto">
+                                        <h3 class="card-title">Humor</h3>
+                                    </div>
+                                </div>
+                                <div class="card genero col-lg-2 col-md-4 col-sm-4 col-6">
+                                    <a href=""><img src="../img/generos/drama.jpg" class="card-img-top"
+                                            alt="Genero drama"></a>
+                                    <div class="card-img-overlay overtexto">
+                                        <h3 class="card-title">Drama</h3>
+                                    </div>
+                                </div>
+                                <div class="card genero col-lg-2 col-md-4 col-sm-4 col-6">
+                                    <a href=""><img src="../img/generos/terror.jpg" class="card-img-top"
+                                            alt="Genero Terror"></a>
+                                    <div class="card-img-overlay overtexto">
+                                        <h3 class="card-title">Terror</h3>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </header>
+
+        <h2>Nuestro catalogo mas reciente!</h2>
+
+        <div class="container-fluid row text-center catalogo" id="items" data-aos="fade-right"> 
+        </div>
+        
+        <!-- <div>
+            <nav aria-label="Page navigation example">
+                <ul class="pagination justify-content-center">
+                    <li class="page-item"><a class="page-link" href="#">1</a></li>
+                    <li class="page-item disabled"><a class="page-link" href="#">2</a></li>
+                    <li class="page-item disabled"><a class="page-link" href="#">3</a></li>
+                    <li class="page-item">
+                        <a class="page-link disabled" href="#">Siguiente</a>
+                    </li>
+                </ul>
+            </nav>
+        </div> -->
+
+
+    </main>
+
+    <footer class="container-fluid">
+        <div class="footer row">
+            <div class="col-12 col-md-6">
+                <h3>CONTACTO</h3>
+                <p>-CORREO: contacto@shamanmanga.cl</p>
+                <p>-HORARIO DE ATENCION: Lunes a viernes, desde las 10:00 am hasta las 18:00 hrs.</p>
+            </div>
+            <div class="col-12 col-md-6">
+                <h3 class="rrss">REDES SOCIALES</h3>
+                <ul class="rrss">
+                    <li><a href="https://www.Instagram.com"><img class="logo" src="../img/ig-logo.png"
+                                alt="Instagram"></a></li>
+                    <li><a href="https://facebook.com"><img class="logo" src="../img/fb-logo.png" alt="Facebook"></a>
+                    </li>
+                    <li><a href="https://facebook.com"><img class="logo" src="../img/wsp-logo.png" alt="Whatsapp"></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <p class="desres">© 2022 Shaman manga store - Francisco Parra (Autor)</p>
+    </footer>
+
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Producto añadido al carrito!</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    Quieres seguir comprando?
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Continuar</button>
+                    <button type="button" class="btn btn-primary">Ir a pagar! C:</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="../script.js"></script>
+    <!-- JavaScript Bundle with Popper -->
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+        crossorigin="anonymous"></script>
+    <!-- aos script -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+
+</body>
+
+</html>

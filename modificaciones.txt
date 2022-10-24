@@ -1,0 +1,9 @@
+-Se optimizo el peso de las imagenes de mayor tamaño
+-se añadieron etiquetas de meta description y keywords en la siguientes paginas:
+	-index
+	-catalogo
+	-ubicacion
+	-contacto
+	-faq
+-se corrigieron etiquetas H para que en cada pagina hayan h1
+-se mejoro el uso de etiquertas h2

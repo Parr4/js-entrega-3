@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bienvenido a Shaman Manga Store!</title>
+  <!-- icono -->
+  <link rel="shortcut icon" href="img/logo.png" type="image/x-icon">
+  <!-- meta -->
+  <meta name="description" content="Tienda Shaman Manga Store - Las mejores novedades de mangas importados">
+  <meta name="keywords"
+    content="manga, importado, japon, anime, tienda, ivre, panini, norma, japon, catalogo, ofertas, descuentos">
+  <!-- links -->
+  <!-- CSS only -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link rel="stylesheet" href="estilo/style.css">
+
+</head>
+
+<body>
+  <!-- nav -->
+  <nav class="navbar sticky-top navbar-dark navbar-expand-lg">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="index.html">
+        <img class="storelogo" src="img/logo.png" alt="Logo" width="37" height="24"
+          class="d-inline-block align-text-top">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll"
+        aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarScroll">
+        <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="catalogo/catalogo.html">Catalogo</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="ubicacion/ubicacion.html">Ubicacion</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contacto/contacto.html">Contacto</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="faq/faq.html">Preguntas frecuentes</a>
+          </li>
+        </ul>
+        <form class="d-flex" role="search">
+          <input class="form-control me-2" type="search" placeholder="Buscar producto" aria-label="Search">
+          <button class="btn btn-outline-secondary" type="submit" style="color: white;">Buscar</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+  <!-- Copiar hasta aca! -->
+  <header>
+    <!-- Carrusel de ofertas -->
+    <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="false">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+          aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+          aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+          aria-label="Slide 3"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img class="destacado" src="img/shamankinglogo.jpg" class="d-block w-100" alt="Shaman king">
+          <div class="carousel-caption d-none d-sm-block">
+            <h5>Shaman King con 15% de descuento!</h5>
+            <p>Disponible hasta el 24 de diciembre!</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img class="destacado" src="img/vinlandsagalogo.jpg" class="d-block w-100" alt="Vinland saga">
+          <div class="carousel-caption d-none d-sm-block">
+            <h5>Vinland Saga Completo</h5>
+            <p>Nuevamente en stock</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img class="destacado" src="img/shuumatsulogo.jpg" class="d-block w-100" alt="Shummatsu">
+          <div class="carousel-caption d-none d-sm-block">
+            <h5>Shuumatsu No Valkyrie</h5>
+            <p>Nuevo manga en serializacion!</p>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+        data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+        data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+    <div class="fixed-bottom wsp">
+      <a href="https://whatsapp.com"><img src="img/wsp.png" alt="Whatsapp"></a>
+    </div>
+  </header>
+
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Producto añadido al carrito!</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          Quieres seguir comprando?
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Continuar</button>
+          <button type="button" class="btn btn-primary">Ir a pagar! C:</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Main -->
+  <main>
+    <h1 class="display-5">Shaman Manga Store</h1>
+    <div class=" intro row contentcenter">
+      <div class="intro-text">
+        <h3 class="display-6" data-aos="fade-right">Estas deseoso de expandir tu coleccion?</h3>
+        <p class="lead" data-aos="fade-right">
+          Tenemos una amplia seleccion de titulos para que puedas coleccionar.
+          <br>
+          Productos 100% originales y en español.
+          <br>
+          Directamente a la puerta de tu hogar.
+        </p>
+      </div>
+    </div>
+
+    <h2> Los mas vendidos!</h2>
+
+    <div data-aos="fade-right" class="container-fluid margdesct">
+      <div class="row text-center contentcenter">
+        <!-- mas vendidos -->
+      </div>
+    </div>
+
+    <h2> Recien llegados!</h2>
+
+    <div data-aos="fade-right" class="container-fluid margdesct">
+      <div class="row text-center contentcenter">
+        <!-- recine llegados -->
+
+      </div>
+    </div>
+
+    <div class="ubi row contentcenter">
+      <div class="intro-text">
+        <h3 class="display-6" data-aos="fade-right">Te gusta ver lo que compras antes de pagarlo?</h3>
+        <p class="lead" data-aos="fade-right">Entonces ven y conoce nuestra tienda!</p>
+        <a data-aos="fade-right" style="color: #FD7F02 ;" href="ubicacion/ubicacion.html">
+          <h3 class="display-6"> Conoce la ubcacion de nuestra tienda aca!</h3>
+        </a>
+        <br>
+      </div>
+    </div>
+
+
+
+  </main>
+
+  <footer class="container-fluid">
+    <div class="footer row">
+      <div class="col-12 col-md-6">
+        <h3>CONTACTO</h3>
+        <p>-CORREO: contacto@shamanmanga.cl</p>
+        <p>-HORARIO DE ATENCION: Lunes a viernes, desde las 10:00 am hasta las 18:00 hrs.</p>
+      </div>
+      <div class="col-12 col-md-6">
+        <h3 class="rrss">REDES SOCIALES</h3>
+        <ul class="rrss">
+          <li><a href="https://www.Instagram.com"><img class="logo" src="img/ig-logo.png" alt="Instagram"></a></li>
+          <li><a href="https://facebook.com"><img class="logo" src="img/fb-logo.png" alt="Facebook"></a></li>
+          <li><a href="https://facebook.com"><img class="logo" src="img/wsp-logo.png" alt="Whatsapp"></a></li>
+        </ul>
+      </div>
+    </div>
+    <p class="desres">© 2022 Shaman manga store - Francisco Parra (Autor)</p>
+  </footer>
+
+  <!--Script de la primera entrega hehehe  -->
+  <!-- <script src="script.js"></script> -->
+
+  <!-- JavaScript Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+    crossorigin="anonymous"></script>
+  <script src="script.js"></script>
+  <!-- aos script -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+</body>
+
+</html>
+
+
+
+<!--
+  codigo viejo de una card
+  <div class="card producto col-lg-2 col-md-3 col-sm-4 col-6">
+          <img src="img/productouno.jpg" class="card-img-top" alt="Shaman king 27">
+          <div class="card-body">
+            <h5 class="card-title">Shaman King 27</h5>
+            <p class="card-text">Editorial Panini Mexico</p>
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+              Añadir al carrito
+            </button>
+          </div>
+        </div> 
+      -->

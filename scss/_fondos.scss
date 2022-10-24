@@ -1,0 +1,70 @@
+/* Fondos */
+
+body {
+  background-image: url(../img/backgroundhd.jpg);
+  background-size: cover; 
+}
+
+main {
+    background-color: rgba(255, 255, 255, 0.856);
+    backdrop-filter: blur(2px)
+}
+
+.intro{
+  background-image: url(../img/gojoeyehd2.png);
+  background-size: cover;
+  background-position: center;
+}
+
+.introcata{
+  background-image: url(../img/chikahd.png);
+  background-size: cover;
+  background-position: center;
+}
+
+.introfaq{
+  background-image: url(../img/questionhd.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.introubi{
+  background-image: url(../img/madeinabyss_20220725191810_cartoon_x4.jpg);
+  background-size: cover;
+  background-position: center;
+  align-items: center; 
+  margin:auto;
+}
+
+.introcontac{
+  background-image: url(../img/crowhd.jpg);
+  background-size: cover;
+  background-position: center;
+  align-items: center;
+  margin: auto;
+}
+
+.ubi{
+  background-image: url(../img/onpiecehd1.png);
+  background-size: cover;
+  background-position: center;
+  border-top: 2px solid black;
+  border-bottom: 2px solid black;
+}
+
+footer{
+    background-image: url(../img/nanamihd1.png);
+    background-size: cover;
+    background-position: center;
+}
+
+.footer{
+    background-color: rgba(0, 0, 0, 0.767);
+    color: white;
+    padding: 10px;
+    padding-top: 30px;
+    color: white;
+    padding: 30px 10% 30px 10%
+}
+
+
