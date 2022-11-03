@@ -51,6 +51,7 @@
             <a class="nav-link" href="faq/faq.html">Preguntas frecuentes</a>
           </li>
         </ul>
+        <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasScrolling" aria-controls="offcanvasScrolling">Carrito</button>
         <form class="d-flex" role="search">
           <input class="form-control me-2" type="search" placeholder="Buscar producto" aria-label="Search">
           <button class="btn btn-outline-secondary" type="submit" style="color: white;">Buscar</button>
@@ -104,6 +105,21 @@
         <span class="visually-hidden">Next</span>
       </button>
     </div>
+
+    <!-- carrito -->
+    <div class="offcanvas offcanvas-right" data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1" id="offcanvasScrolling" aria-labelledby="offcanvasScrollingLabel">
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="offcanvasScrollingLabel">Carrito de compras</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+      <div class="offcanvas-body">
+          <div id="carrito" ></div>
+          <p> Monto total: <span id="total"></span></p>
+          <button id="boton-comprar" class="btn btn-primary"> Comprar!</button>
+          <button id="boton-vaciar" class="btn btn-danger"> Eliminar</button>
+      </div>
+    </div>
+
     <div class="fixed-bottom wsp">
       <a href="https://whatsapp.com"><img src="img/wsp.png" alt="Whatsapp"></a>
     </div>
@@ -208,6 +224,7 @@
   <script>
     AOS.init();
   </script>
+  <script src="../script.js"></script>
 </body>
 
 </html>

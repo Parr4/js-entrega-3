@@ -1,0 +1,67 @@
+[
+{
+    "franqId" : 1,
+    "id": 1,
+    "franquicia": "Shaman King",
+    "tomo": 1,
+    "stock": 10,
+    "precio": 16990
+},
+{
+    "franqId" : 1,
+    "id": 2,
+    "franquicia": "Shaman King",
+    "tomo": 2,
+    "stock": 6,
+    "precio": 16990
+},
+{
+    "franqId" : 1,
+    "id": 3,
+    "franquicia": "Shaman King",
+    "tomo": 0,
+    "stock": 5,
+    "precio": 16990
+},
+{
+    "franqId" : 1,
+    "id": 4,
+    "franquicia": "Shaman King",
+    "tomo": 4,
+    "stock": 9,
+    "precio": 16990
+},
+{
+    "franqId" : 1,
+    "id": 5,
+    "franquicia": "Shaman King",
+    "tomo": 5,
+    "stock": 4,
+    "precio": 16990
+}
+]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

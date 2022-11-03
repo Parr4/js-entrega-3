@@ -14,12 +14,6 @@ class Producto {
         this.precio = precio
         this.codigo = this.franqId + `.` + this.id
     }
-
-    restarStock(listado, objetos) {
-        this.stock = this.stock - 1;
-        actualizar(listado, objetos);
-        carroCompra.push(this);
-    }
 }
 
 class Franquicia {
@@ -32,15 +26,7 @@ class Franquicia {
 }
 // funciones de acciones
 
-// Generador de listado de productos
-function armadoLista(objetos, listado) {
-    for (const tomo of objetos) {
-        listado.push("\n" + tomo.id + ".- " + tomo.franquicia + " " + tomo.tomo + " (" + tomo.stock + ") $" + tomo.precio)
-    }
-}
-
-
-// franquicias para el menu
+// franquicias disponibles
 let menuA = new Franquicia("1", "Shaman King", "Editorial Panini Mexico", 16990)
 let menuB = new Franquicia("2", "Vinland Saga", "Editorial OvniPress", 14990)
 let menuC = new Franquicia("3", "Tokyo Revengers", "Ivrea Argentina", 9990)
@@ -61,7 +47,6 @@ let shmkPan5 = new Producto(franquicias[0].id, "5", franquicias[0].nombre, "Tomo
 let productoShmkPan = [shmkPan1, shmkPan2, shmkPan3, shmkPan4, shmkPan5];
 let listaShmkPan = []
 
-armadoLista(productoShmkPan, listaShmkPan)
 
 
 // Vinland saga - Ovnipress
@@ -76,7 +61,6 @@ let vdsgOp5 = new Producto(franquicias[1].id, "5", franquicias[1].nombre, "Tomo 
 let productoVdsgOp = [vdsgOp1, vdsgOp2, vdsgOp3, vdsgOp4, vdsgOp5];
 let listaVdsgOP = []
 
-armadoLista(productoVdsgOp, listaVdsgOP)
 
 // Tokyo Revengers - Ivrea Argentina
 let tkrvIvr = "Tokyo Revengers - Ivrea Argentina - $9.990 c/u";
@@ -90,18 +74,12 @@ let tkrvIvr5 = new Producto(franquicias[2].id, "5", franquicias[2].nombre, "Tomo
 let productoTkrvIvr = [tkrvIvr1, tkrvIvr2, tkrvIvr3, tkrvIvr4, tkrvIvr5];
 let listaTkrvIvr = []
 
-armadoLista(productoTkrvIvr, listaTkrvIvr)
 
 let productos = [...productoShmkPan, ...productoTkrvIvr, ...productoVdsgOp]
-// localStorage.setItem("catalogo", JSON.stringify(productos))
-// recargarCatalogo()
 
 let catalogoJson = JSON.parse(localStorage.getItem("catalogo"))
-console.log(catalogoJson)
 recargarCatalogo()
 catalogoJson = JSON.parse(localStorage.getItem("catalogo"))
-
-
 
 
 console.log(productos)
@@ -125,6 +103,7 @@ function vaciarCarritoBtn() {
     listaCarro.innerHTML = ''
     valorTotal.innerText = 0
     devolverStock()
+    filtradoCatalogo()
     localStorage.removeItem("catalogoDinamico")
     localStorage.removeItem("carrito")
 }
@@ -138,8 +117,40 @@ cargarCatalogo()
 renderCarrito()
 respaldarStock()
 
+let seleccionFiltro = document.querySelector('#seleccion')
+let filtroSeleccionado = document.getElementById('seleccion').value
+
+seleccionFiltro.addEventListener('change', filtradoCatalogo)
 
 
+function filtradoCatalogo(){
+    filtroSeleccionado = document.getElementById('seleccion').value
+    console.log(filtroSeleccionado)
+    switch(filtroSeleccionado){
+        case '1':
+            catalogoJson.sort((a, b) => a.precio - b.precio)
+            break
+        case '2':
+            catalogoJson.sort((a, b) => b.precio - a.precio)
+            break
+        case '3':
+            catalogoJson.sort((a, b) => b.id - a.id)
+            break
+        case '4':
+            catalogoJson.sort((a, b) => a.id - b.id)
+            break
+        case '5':
+            catalogoJson.sort((a, b) => b.stock - a.stock)
+            break
+        case '6':
+            catalogoJson.sort((a, b) => a.stock - b.stock)
+            break
+        default:
+            catalogoJson.sort((a, b) => a.franquicia.localeCompare(b.franquicia))
+            break
+    }
+    renderProductos()
+}
 
 function renderProductos() {
     catalogo.innerHTML = ''
@@ -347,9 +358,10 @@ function comprarCarrito(){
     })}
     console.log(valorTotalVisible)
     localStorage.removeItem("catalogoDinamico")
-    // respaldarStock
+    respaldarStock()
     recargarCatalogo()
     renovarCarrito()
+    filtradoCatalogo()
 }
 
 function recargarCatalogo(){
@@ -368,3 +380,19 @@ function renovarCarrito(){
     localStorage.removeItem("catalogoDinamico")
     localStorage.removeItem("carrito")
 }
+
+fetch('/objetos.json')
+    .then( (objetos) => objetos.json())
+    .then( (data) => {
+        console.log(data)
+    })
+
+
+// {
+//     "franqId" : ,
+//     "id": ,
+//     "franquicia": ,
+//     "tomo": ,
+//     "stock": ,
+//     "precio": ,
+// }
