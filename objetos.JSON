@@ -1,67 +1,236 @@
 [
-{
-    "franqId" : 1,
-    "id": 1,
-    "franquicia": "Shaman King",
-    "tomo": 1,
-    "stock": 10,
-    "precio": 16990
-},
-{
-    "franqId" : 1,
-    "id": 2,
-    "franquicia": "Shaman King",
-    "tomo": 2,
-    "stock": 6,
-    "precio": 16990
-},
-{
-    "franqId" : 1,
-    "id": 3,
-    "franquicia": "Shaman King",
-    "tomo": 0,
-    "stock": 5,
-    "precio": 16990
-},
-{
-    "franqId" : 1,
-    "id": 4,
-    "franquicia": "Shaman King",
-    "tomo": 4,
-    "stock": 9,
-    "precio": 16990
-},
-{
-    "franqId" : 1,
-    "id": 5,
-    "franquicia": "Shaman King",
-    "tomo": 5,
-    "stock": 4,
-    "precio": 16990
-}
+    {
+        "franqId": 1,
+        "id": 1,
+        "franquicia": "Shaman King",
+        "editorial": "Panini Mexico",
+        "tomo": 1,
+        "stock": 10,
+        "precio": 16990
+    },
+    {
+        "franqId": 1,
+        "id": 2,
+        "franquicia": "Shaman King",
+        "editorial": "Panini Mexico",
+        "tomo": 2,
+        "stock": 6,
+        "precio": 16990
+    },
+    {
+        "franqId": 1,
+        "id": 3,
+        "franquicia": "Shaman King",
+        "editorial": "Panini Mexico",
+        "tomo": 3,
+        "stock": 6,
+        "precio": 16990
+    },
+    {
+        "franqId": 1,
+        "id": 4,
+        "franquicia": "Shaman King",
+        "editorial": "Panini Mexico",
+        "tomo": 4,
+        "stock": 9,
+        "precio": 16990
+    },
+    {
+        "franqId": 1,
+        "id": 5,
+        "franquicia": "Shaman King",
+        "editorial": "Panini Mexico",
+        "tomo": 5,
+        "stock": 4,
+        "precio": 16990
+    },
+    {
+        "franqId": 1,
+        "id": 6,
+        "franquicia": "Shaman King",
+        "editorial": "Panini Mexico",
+        "tomo": 6,
+        "stock": 7,
+        "precio": 16990
+    },
+    {
+        "franqId": 1,
+        "id": 7,
+        "franquicia": "Shaman King",
+        "editorial": "Panini Mexico",
+        "tomo": 7,
+        "stock": 4,
+        "precio": 16990
+    },
+    {
+        "franqId": 1,
+        "id": 8,
+        "franquicia": "Shaman King",
+        "editorial": "Panini Mexico",
+        "tomo": 8,
+        "stock": 10,
+        "precio": 16990
+    },
+    {
+        "franqId": 1,
+        "id": 9,
+        "franquicia": "Shaman King",
+        "editorial": "Panini Mexico",
+        "tomo": 9,
+        "stock": 10,
+        "precio": 16990
+    },
+    {
+        "franqId": 1,
+        "id": 10,
+        "franquicia": "Shaman King",
+        "editorial": "Panini Mexico",
+        "tomo": 10,
+        "stock": 14,
+        "precio": 16990
+    },
+    {
+        "franqId": 1,
+        "id": 11,
+        "franquicia": "Shaman King",
+        "editorial": "Panini Mexico",
+        "tomo": 11,
+        "stock": 11,
+        "precio": 16990
+    },
+    {
+        "franqId": 1,
+        "id": 12,
+        "franquicia": "Shaman King",
+        "editorial": "Panini Mexico",
+        "tomo": 12,
+        "stock": 19,
+        "precio": 16990
+    },
+    {
+        "franqId": 2,
+        "id": 1,
+        "franquicia": "Tokyo Revengers",
+        "editorial": "Ivrea Argentina",
+        "tomo": 1,
+        "stock": 11,
+        "precio": 9990
+    },
+    {
+        "franqId": 2,
+        "id": 2,
+        "franquicia": "Tokyo Revengers",
+        "editorial": "Ivrea Argentina",
+        "tomo": 2,
+        "stock": 8,
+        "precio": 9990
+    },
+    {
+        "franqId": 2,
+        "id": 3,
+        "franquicia": "Tokyo Revengers",
+        "editorial": "Ivrea Argentina",
+        "tomo": 3,
+        "stock": 0,
+        "precio": 9990
+    },
+    {
+        "franqId": 2,
+        "id": 4,
+        "franquicia": "Tokyo Revengers",
+        "editorial": "Ivrea Argentina",
+        "tomo": 4,
+        "stock": 9,
+        "precio": 9990
+    },
+    {
+        "franqId": 2,
+        "id": 5,
+        "franquicia": "Tokyo Revengers",
+        "editorial": "Ivrea Argentina",
+        "tomo": 5,
+        "stock": 12,
+        "precio": 9990
+    },
+    {
+        "franqId": 2,
+        "id": 6,
+        "franquicia": "Tokyo Revengers",
+        "editorial": "Ivrea Argentina",
+        "tomo": 6,
+        "stock": 17,
+        "precio": 9990
+    },
+    {
+        "franqId": 2,
+        "id": 7,
+        "franquicia": "Tokyo Revengers",
+        "editorial": "Ivrea Argentina",
+        "tomo": 7,
+        "stock": 10,
+        "precio": 9990
+    },
+    {
+        "franqId": 2,
+        "id": 8,
+        "franquicia": "Tokyo Revengers",
+        "editorial": "Ivrea Argentina",
+        "tomo": 8,
+        "stock": 10,
+        "precio": 9990
+    },
+    {
+        "franqId": 2,
+        "id": 9,
+        "franquicia": "Tokyo Revengers",
+        "editorial": "Ivrea Argentina",
+        "tomo": 9,
+        "stock": 2,
+        "precio": 9990
+    },
+    {
+        "franqId": 3,
+        "id": 1,
+        "franquicia": "vinland Saga",
+        "editorial": "OvniPress Argentina",
+        "tomo": 1,
+        "stock": 8,
+        "precio": 14990
+    },
+    {
+        "franqId": 3,
+        "id": 2,
+        "franquicia": "vinland Saga",
+        "editorial": "OvniPress Argentina",
+        "tomo": 2,
+        "stock": 13,
+        "precio": 14990
+    },
+    {
+        "franqId": 3,
+        "id": 3,
+        "franquicia": "vinland Saga",
+        "editorial": "OvniPress Argentina",
+        "tomo": 3,
+        "stock": 5,
+        "precio": 14990
+    },
+    {
+        "franqId": 3,
+        "id": 4,
+        "franquicia": "vinland Saga",
+        "editorial": "OvniPress Argentina",
+        "tomo": 4,
+        "stock": 17,
+        "precio": 14990
+    },
+    {
+        "franqId": 3,
+        "id": 5,
+        "franquicia": "vinland Saga",
+        "editorial": "OvniPress Argentina",
+        "tomo": 5,
+        "stock": 18,
+        "precio": 14990
+    }
 ]
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

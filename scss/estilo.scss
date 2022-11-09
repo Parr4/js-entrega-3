@@ -126,6 +126,23 @@ h5 {
         filter: grayscale(0.7);
     }
 }
+.editorial{
+    font-weight: bold;
+}
+.img-cart{
+    display: inline-flex;
+    max-height: 100px;
+    max-width: max-content;
+}
+.cart-item{
+    align-items: center;
+    margin: 5px;
+    padding: 3px;
+    border: 1px black solid;
+}
+.offcanvas{
+    background-color: #fafafa;
+}
 
 .genecatalog {
     margin: auto;
@@ -436,7 +453,17 @@ $color in $colors {
 }
 
 // // @include centers (center, center)
+.hidden{
+    display: none;
+    background-color: red($color: #000000);
+}
 
-.carrito {
-    
+.buscador{
+    max-width: 30vw;
+    justify-content: center;
+    padding: 10px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+
+
 }

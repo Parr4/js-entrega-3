@@ -51,32 +51,32 @@
                         <a class="nav-link" href="../faq/faq.html">Preguntas frecuentes</a>
                     </li>
                 </ul>
-                <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasScrolling" aria-controls="offcanvasScrolling">Carrito</button>
-                <form class="d-flex" role="search">
-                    <input class="form-control me-2" type="search" placeholder="Buscar producto" aria-label="Search">
-                    <button class="btn btn-outline-secondary" type="submit" style="color: white;">Buscar</button>
-                </form>
+
+                <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasScrolling" aria-controls="offcanvasScrolling" style="background-color:white ; color: black">Carrito</button>
             </div>
         </div>
 
     </nav>
 
     <!-- carrito -->
-    <div class="offcanvas offcanvas-right" data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1" id="offcanvasScrolling" aria-labelledby="offcanvasScrollingLabel">
+    <div class="offcanvas offcanvas-start" data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1"
+        id="offcanvasScrolling" aria-labelledby="offcanvasScrollingLabel">
         <div class="offcanvas-header">
-          <h5 class="offcanvas-title" id="offcanvasScrollingLabel">Carrito de compras</h5>
-          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            <h5 class="offcanvas-title" id="offcanvasScrollingLabel">Carrito de compras</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
         </div>
         <div class="offcanvas-body">
-            <div id="carrito" ></div>
-            <p> Monto total: <span id="total"></span></p>
+            <div id="carrito"></div>
+            <p> Monto total: $ <span id="total"></span></p>
             <button id="boton-comprar" class="btn btn-primary"> Comprar!</button>
             <button id="boton-vaciar" class="btn btn-danger"> Eliminar</button>
         </div>
-      </div>
+    </div>
 
     <div class="fixed-bottom wsp">
         <a href="https://whatsapp.com"><img src="../img/wsp.png" alt="Whatsapp"></a>
+
     </div>
 
 
@@ -94,57 +94,28 @@
                         Siempre puedes ver tus generos favoritos y descubrir nuevas joyitas!
                     </p>
 
+                    <div class="col" >
+
+                        <div class="row contentcenter">
+                            <input class="col buscador" id="buscador" onkeyup="buscador()" type="text" name="search" placeholder="Buscar por nombre">
+
+                            <select class="buscador row" name="Ordenar por:" id="seleccion">
+                                <option value="">Ordenar por nombre</option>
+                                <option value="1"> por precio: Mas bajo a mas alto</option>
+                                <option value="2"> por precio: Mas alto a mas bajo</option>
+                                <option value="3"> por numero: Mas nuevo a mas viejo</option>
+                                <option value="4"> por numero: Mas viejo a mas nuevo</option>
+                                <option value="5"> por disponibilidad: Mayor disponibilidad</option>
+                                <option value="6"> por disponibilidad: Menor disponibilidad</option>
+                            </select>
+                        </div>
+
+                    </div>
+
 
 
                     <!-- generos -->
-                    <div style="margin:0 30px 0 30px ;">
-                        <div class="container-fluid genecatalog" data-aos="fade-right">
-                            <div class="row text-center container-fluid contentcenter">
-                                <div class="card genero col-lg-2 col-md-4 col-sm-4 col-6">
-                                    <a href=""><img src="../img/generos/shonen.png" class="card-img-top"
-                                            alt="Genero Shonen"></a>
-                                    <div class="card-img-overlay overtexto">
-                                        <h3 class="card-title">Shonen</h3>
-                                    </div>
-                                </div>
-                                <div class="card genero col-lg-2 col-md-4 col-sm-4 col-6">
-                                    <a href=""><img src="../img/generos/shojo.jpg" class="card-img-top"
-                                            alt="Genero shojo"></a>
-                                    <div class="card-img-overlay overtexto">
-                                        <h3 class="card-title">Shojo</h3>
-                                    </div>
-                                </div>
-                                <div class="card genero col-lg-2 col-md-4 col-sm-4 col-6">
-                                    <a href=""><img src="../img/generos/seinen.jpg" class="card-img-top"
-                                            alt="Genero seinen"></a>
-                                    <div class="card-img-overlay overtexto">
-                                        <h3 class="card-title">Seinen</h3>
-                                    </div>
-                                </div>
-                                <div class="card genero col-lg-2 col-md-4 col-sm-4 col-6">
-                                    <a href=""><img src="../img/generos/humor.jpeg" class="card-img-top"
-                                            alt="genero humor"></a>
-                                    <div class="card-img-overlay overtexto">
-                                        <h3 class="card-title">Humor</h3>
-                                    </div>
-                                </div>
-                                <div class="card genero col-lg-2 col-md-4 col-sm-4 col-6">
-                                    <a href=""><img src="../img/generos/drama.jpg" class="card-img-top"
-                                            alt="Genero drama"></a>
-                                    <div class="card-img-overlay overtexto">
-                                        <h3 class="card-title">Drama</h3>
-                                    </div>
-                                </div>
-                                <div class="card genero col-lg-2 col-md-4 col-sm-4 col-6">
-                                    <a href=""><img src="../img/generos/terror.jpg" class="card-img-top"
-                                            alt="Genero Terror"></a>
-                                    <div class="card-img-overlay overtexto">
-                                        <h3 class="card-title">Terror</h3>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+
                 </div>
             </div>
 
@@ -152,31 +123,10 @@
 
         <h2>Nuestro catalogo mas reciente!</h2>
 
-        <div>
-            <select name="Ordenar por:" id="seleccion">
-                <option value="">Ordenar por nombre</option>
-                <option value="1"> por precio: Mas bajo a mas alto</option>
-                <option value="2"> por precio: Mas alto a mas bajo</option>
-                <option value="3"> por numero: Mas nuevo a mas viejo</option>
-                <option value="4"> por numero: Mas viejo a mas nuevo</option>
-                <option value="5"> por disponibilidad: Mayor disponibilidad</option>
-                <option value="6"> por disponibilidad: Menor disponibilidad</option>
-            </select>
-        </div>
+
+
         <div class="container-fluid row text-center catalogo" id="items" data-aos="fade-right"> </div>
-        
-        <!-- <div>
-            <nav aria-label="Page navigation example">
-                <ul class="pagination justify-content-center">
-                    <li class="page-item"><a class="page-link" href="#">1</a></li>
-                    <li class="page-item disabled"><a class="page-link" href="#">2</a></li>
-                    <li class="page-item disabled"><a class="page-link" href="#">3</a></li>
-                    <li class="page-item">
-                        <a class="page-link disabled" href="#">Siguiente</a>
-                    </li>
-                </ul>
-            </nav>
-        </div> -->
+
 
 
     </main>
@@ -203,24 +153,6 @@
         <p class="desres">© 2022 Shaman manga store - Francisco Parra (Autor)</p>
     </footer>
 
-    <!-- Modal -->
-    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel">Producto añadido al carrito!</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body">
-                    Quieres seguir comprando?
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Continuar</button>
-                    <button type="button" class="btn btn-primary">Ir a pagar! C:</button>
-                </div>
-            </div>
-        </div>
-    </div>
 
 
     <!-- JavaScript Bundle with Popper -->
@@ -233,7 +165,8 @@
     <script>
         AOS.init();
     </script>
-    <script src="../script.js"></script>
+    <!-- <script src="../script.js"></script> -->
+    <script src="../script2.js"></script>
 
 </body>
 

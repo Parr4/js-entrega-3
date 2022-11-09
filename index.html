@@ -51,11 +51,8 @@
             <a class="nav-link" href="faq/faq.html">Preguntas frecuentes</a>
           </li>
         </ul>
-        <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasScrolling" aria-controls="offcanvasScrolling">Carrito</button>
-        <form class="d-flex" role="search">
-          <input class="form-control me-2" type="search" placeholder="Buscar producto" aria-label="Search">
-          <button class="btn btn-outline-secondary" type="submit" style="color: white;">Buscar</button>
-        </form>
+        <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas"
+        data-bs-target="#offcanvasScrolling" aria-controls="offcanvasScrolling" style="background-color:white ; color: black">Carrito</button>
       </div>
     </div>
   </nav>
@@ -107,14 +104,14 @@
     </div>
 
     <!-- carrito -->
-    <div class="offcanvas offcanvas-right" data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1" id="offcanvasScrolling" aria-labelledby="offcanvasScrollingLabel">
+    <div class="offcanvas offcanvas-start" data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1" id="offcanvasScrolling" aria-labelledby="offcanvasScrollingLabel">
       <div class="offcanvas-header">
         <h5 class="offcanvas-title" id="offcanvasScrollingLabel">Carrito de compras</h5>
         <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
       </div>
       <div class="offcanvas-body">
           <div id="carrito" ></div>
-          <p> Monto total: <span id="total"></span></p>
+          <p> Monto total: $ <span id="total"></span></p>
           <button id="boton-comprar" class="btn btn-primary"> Comprar!</button>
           <button id="boton-vaciar" class="btn btn-danger"> Eliminar</button>
       </div>
@@ -165,6 +162,7 @@
     <div data-aos="fade-right" class="container-fluid margdesct">
       <div class="row text-center contentcenter">
         <!-- mas vendidos -->
+        <div id="cincoMasVendidos" class="container-fluid row text-center catalogo"></div>
       </div>
     </div>
 
@@ -173,6 +171,8 @@
     <div data-aos="fade-right" class="container-fluid margdesct">
       <div class="row text-center contentcenter">
         <!-- recine llegados -->
+        <div id="cincoMasNuevos" class="container-fluid row text-center catalogo"></div>
+      </div>
 
       </div>
     </div>
@@ -211,20 +211,23 @@
     <p class="desres">© 2022 Shaman manga store - Francisco Parra (Autor)</p>
   </footer>
 
+  <!-- <div id="items" ></div> -->
+
   <!--Script de la primera entrega hehehe  -->
   <!-- <script src="script.js"></script> -->
 
   <!-- JavaScript Bundle with Popper -->
+  <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
     crossorigin="anonymous"></script>
-  <script src="script.js"></script>
+  <!-- <script src="script.js"></script> -->
   <!-- aos script -->
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script>
     AOS.init();
   </script>
-  <script src="../script.js"></script>
+  <script src="script2.js"></script>
 </body>
 
 </html>

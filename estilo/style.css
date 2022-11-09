@@ -146,6 +146,23 @@ h5 {
     box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
     filter: grayscale(0.7); }
 
+.editorial {
+  font-weight: bold; }
+
+.img-cart {
+  display: inline-flex;
+  max-height: 100px;
+  max-width: max-content; }
+
+.cart-item {
+  align-items: center;
+  margin: 5px;
+  padding: 3px;
+  border: 1px black solid; }
+
+.offcanvas {
+  background-color: #fafafa; }
+
 .genecatalog {
   margin: auto;
   padding: 25px 0px 25px 0px;
@@ -387,3 +404,14 @@ img.destacado {
   margin: 30px; }
   .red--whatsapp a {
     color: white; }
+
+.hidden {
+  display: none;
+  background-color: 0; }
+
+.buscador {
+  max-width: 30vw;
+  justify-content: center;
+  padding: 10px;
+  margin-top: 10px;
+  margin-bottom: 20px; }
