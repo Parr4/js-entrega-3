@@ -248,7 +248,7 @@ function cargarJson() {
                     // img
                     let img = document.createElement('img')
                     img.classList.add('card-img-top')
-                    img.setAttribute('src', `../img/${prod.franquicia}/${prod.id}.jpg`)
+                    img.setAttribute('src', `./img/${prod.franquicia}/${prod.id}.jpg`)
                     // body
                     let body = document.createElement('div')
                     body.classList.add('card-body')
@@ -348,7 +348,7 @@ function renderProductos() {
                 // img
                 let img = document.createElement('img')
                 img.classList.add('card-img-top')
-                img.setAttribute('src', `../img/${prod.franquicia}/${prod.id}.jpg`)
+                img.setAttribute('src', `./img/${prod.franquicia}/${prod.id}.jpg`)
                 // body
                 let body = document.createElement('div')
                 body.classList.add('card-body')
@@ -491,7 +491,7 @@ function renderDestacados(seccion) {
             // img
             let img = document.createElement('img')
             img.classList.add('card-img-top')
-            img.setAttribute('src', `../img/${prod.franquicia}/${prod.id}.jpg`)
+            img.setAttribute('src', `./img/${prod.franquicia}/${prod.id}.jpg`)
             // body
             let body = document.createElement('div')
             body.classList.add('card-body')
