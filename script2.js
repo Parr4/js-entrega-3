@@ -561,7 +561,7 @@ setTimeout(() => {
     renderProductos()
     respaldarStock()
 
-}, 500)
+}, 3000)
 
 console.log("Hola")
 // console.log(catalogoJson)
