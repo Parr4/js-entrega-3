@@ -563,5 +563,5 @@ setTimeout(() => {
 
 }, 2000)
 
-console.log("Hola")
+console.log("github me esta dando este error con el fetch, le dejo el proyecto subido en otro host https://shamanmangastore.000webhostapp.com/")
 // console.log(catalogoJson)
