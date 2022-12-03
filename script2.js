@@ -235,7 +235,7 @@ function renovarCarrito() {
 
 function cargarJson() {
     if (localStorage.getItem("catalogo") == null) {
-        fetch('objetos.json')
+        fetch('js-entrega-3/objetos.JSON')
             .then((objetos) => objetos.json())
             .then((info) => info.forEach((prod) => {
                 if (document.getElementById('items') != null) {
