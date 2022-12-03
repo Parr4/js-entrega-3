@@ -235,7 +235,7 @@ function renovarCarrito() {
 
 function cargarJson() {
     if (localStorage.getItem("catalogo") == null) {
-        fetch('https://github.com/Parr4/js-entrega-3/objetos.JSON')
+        fetch('objetos.json')
             .then((objetos) => objetos.json())
             .then((info) => info.forEach((prod) => {
                 if (document.getElementById('items') != null) {
@@ -561,7 +561,7 @@ setTimeout(() => {
     renderProductos()
     respaldarStock()
 
-}, 1000)
+}, 2000)
 
 console.log("Hola")
 // console.log(catalogoJson)

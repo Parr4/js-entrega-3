@@ -191,7 +191,7 @@
     {
         "franqId": 3,
         "id": 1,
-        "franquicia": "vinland Saga",
+        "franquicia": "Vinland Saga",
         "editorial": "OvniPress Argentina",
         "tomo": 1,
         "stock": 8,
@@ -200,7 +200,7 @@
     {
         "franqId": 3,
         "id": 2,
-        "franquicia": "vinland Saga",
+        "franquicia": "Vinland Saga",
         "editorial": "OvniPress Argentina",
         "tomo": 2,
         "stock": 13,
@@ -209,7 +209,7 @@
     {
         "franqId": 3,
         "id": 3,
-        "franquicia": "vinland Saga",
+        "franquicia": "Vinland Saga",
         "editorial": "OvniPress Argentina",
         "tomo": 3,
         "stock": 5,
@@ -218,7 +218,7 @@
     {
         "franqId": 3,
         "id": 4,
-        "franquicia": "vinland Saga",
+        "franquicia": "Vinland Saga",
         "editorial": "OvniPress Argentina",
         "tomo": 4,
         "stock": 17,
@@ -227,7 +227,7 @@
     {
         "franqId": 3,
         "id": 5,
-        "franquicia": "vinland Saga",
+        "franquicia": "Vinland Saga",
         "editorial": "OvniPress Argentina",
         "tomo": 5,
         "stock": 18,
